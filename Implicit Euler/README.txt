@@ -1,27 +1,13 @@
-NEUTRINO DECOUPLING SOLVER - MATHEMATICA
+NEUTRINO DECOUPLING SOLVER - MATHEMATICA - IMPLICIT EULER METHOD
 
-Stages:
-	1. QED Corrections
-	2. Non-instantaneous decoupling (NID)
-	3. NID + QED Corrections
+The NIDBasicModules.nb (NIDQEDBasicModules.nb) contains the constants, parameters and the definition of the functions and derivatives for the NID (NID+QED) case. 
 
-Details of the current program: Stage 2
+The files with extension .m are packages created by the Basic Modules notebooks automatically and used by the numerical methods codes.
 
-- Using the Euler Method to solve the equations system. 
-- Initial Conditions: Modern, from De Salas et al, 2016.
-- Reference Mass: Electron mass me.
-- Using (me/x)4
-- Some errors corrected to the Method
+The notebook ImplicitEuler.nb contains the implemented Euler method to the neutrinos decoupling solution. If there is a crash, the BackUp.nb notebook runs the code Euler.nb starting where it failed.
 
-Results: N = 1000, z = null, Neff = null
-Details: AccuracyGoal->6, MaxPoints->1000
-
-Details of the current program: Stage 3
-
-- Using the Euler Method to solve the equations system. 
-- Initial Conditions: Modern, from De Salas et al, 2016.
-- Reference Mass: Electron mass me.
-- Using (me/x)4
-
-Results: N = 4000, z = null, Neff = null
-Details: AccuracyGoal->6, MaxPoints->10000
+To run the program just do
+1. Open ImplicitEuler.nb
+2. Run the Notebook
+3. Say yes when asked to run the initialization cells
+4. Run the Results.nb notebook to obtain the results
