@@ -6,8 +6,10 @@ The files with extension .m are packages created by the Basic Modules notebooks 
 
 The notebook ImplicitEuler.nb contains the implemented Euler method to the neutrinos decoupling solution. If there is a crash, the BackUp.nb notebook runs the code Euler.nb starting where it failed.
 
+The folder QED contains the program that solves the continuity equation considering the QED corrections alone (QED) with the differential equations numerical method.
+
 To run the program just do
 1. Open ImplicitEuler.nb
 2. Run the Notebook
-3. Say yes when asked to run the initialization cells
+3. Allow to run the initialization cells
 4. Run the Results.nb notebook to obtain the results
