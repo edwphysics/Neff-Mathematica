@@ -9,7 +9,7 @@ The notebook Euler.nb contains the implemented Euler method to the neutrinos dec
 The folder QED contains the program that solves the continuity equation considering the QED corrections alone (QED) with the differential equations numerical method.
 
 To run the program just do
-1. Open ImplicitEuler.nb
+1. Open Euler.nb
 2. Run the Notebook
 3. Allow to run the initialization cells
 4. Run the Results.nb notebook to obtain the results
